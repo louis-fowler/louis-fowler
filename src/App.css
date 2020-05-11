@@ -15,7 +15,7 @@ a {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 1fr 10%;
+  grid-template-rows: 30% 1fr 10%;
   gap: 1px 1px;
   grid-template-areas: "App-header" "mainContainer" "App-footer";
   background-color: rgb(250, 250, 250);
