@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <HeaderComp />
       <MainContent />
-      {/* <FooterComp /> */}
+      <FooterComp />
     </div>
   );
 }

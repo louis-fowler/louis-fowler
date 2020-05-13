@@ -3,8 +3,9 @@ import React from "react";
 function FooterComp() {
   return (
     <footer className="App-footer">
-      <p className="lineRight">top</p>
-      <p>home</p>
+      <a href="#toTop">
+        <p>top</p>
+      </a>
     </footer>
   );
 }
