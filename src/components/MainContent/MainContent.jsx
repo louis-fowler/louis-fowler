@@ -8,6 +8,8 @@ import {
   faNodeJs,
   faReact,
   faJsSquare,
+  faSquarespace,
+  faShopify,
 } from "@fortawesome/free-brands-svg-icons";
 import jfImage from "../../imgs/jfrestoration.png";
 
@@ -17,7 +19,7 @@ function MainContent() {
       <div className="titleContainer">
         <h2>Front end web developer residing in Auckland, New Zealand</h2>
       </div>
-      <h2 className="titleText">Proficient in</h2>
+      <h2 className="titleText">Experience in</h2>
       <div className="displayCards">
         <LangCard icon={faHtml5} title="HTML 5" />
         <LangCard icon={faCss3} title="CSS3" />
@@ -25,6 +27,8 @@ function MainContent() {
         <LangCard icon={faJsSquare} title="JavaScript" />
         <LangCard icon={faNodeJs} title="Node.js" />
         <LangCard icon={faReact} title="ReactJs" />
+        <LangCard icon={faSquarespace} title="Squarespace" />
+        <LangCard icon={faShopify} title="Shopify" />
       </div>
       <h2 className="titleText">Current Projects</h2>
       <div className="displayCards">

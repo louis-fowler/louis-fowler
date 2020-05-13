@@ -4,7 +4,7 @@ function ProjectCard(props) {
   return (
     <div className="proCardContainer">
       <div className="imgContainer">
-        <a href={props.siteLink}>
+        <a href={props.siteLink} className="imgContainer">
           <img src={props.img} alt={props.siteLinkEasy} />
         </a>
       </div>
