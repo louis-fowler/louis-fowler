@@ -36,8 +36,14 @@ function MainContent() {
       </div>
       <div className="contactContainer">
         <h2 className="titleText">Contact:</h2>
-        <h3>Phone: 021 903 800</h3>
-        <h3>Email: louis.fowler@gmail.com</h3>
+        <h3>
+          Phone: <a href="tel:+064-21-903-800">021 903 800</a>
+        </h3>
+
+        <h3>
+          Email:{" "}
+          <a href="mailto: louis.fowler@gmail.com">louis.fowler@gmail.com</a>
+        </h3>
       </div>
     </div>
   );

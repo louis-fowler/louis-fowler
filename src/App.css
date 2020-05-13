@@ -20,7 +20,7 @@ img {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 1fr 10%;
+  grid-template-rows: 20vmax 1fr 10%;
   gap: 1px 1px;
   grid-template-areas: "App-header" "mainContainer" "App-footer";
   background-color: rgb(250, 250, 250);
@@ -47,7 +47,7 @@ img {
 /* MainContent  */
 
 .mainContainer {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   grid-area: mainContainer;
 }
@@ -56,8 +56,6 @@ img {
   font-size: calc(10px + 6vmin);
   font-weight: 200;
 }
-
-/* live */
 
 .titleContainer {
   display: flex;
@@ -93,9 +91,8 @@ img {
 
 /* COming soon  */
 
-.dotDotDot {
+/* .dotDotDot {
   font-size: calc(6px + 1vmin);
-  /* padding-top: 20px; */
 }
 
 @keyframes dotDotDot {
@@ -131,7 +128,7 @@ img {
 
 .contactInfo h2 {
   font-weight: 400;
-}
+} */
 
 /* LangCard */
 
@@ -140,10 +137,11 @@ img {
   flex-direction: column;
   /* justify-content: baseline; */
   align-items: center;
-  width: 17vw;
+  width: 30vw;
 }
 
 .cardContainer h3 {
+  font-size: 2vmin;
   margin-top: 0;
   margin-bottom: 5vh;
 }
@@ -152,28 +150,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 17vw;
-  height: 12vw;
+  width: 30vw;
+  height: 20vw;
   border-radius: 10px;
   /* background-color: rgb(230, 230, 230); */
-}
-
-.card i {
-  font-size: 10vw;
-  transition: 0.6s;
-}
-
-.card i:hover {
-  font-size: 11vw;
-  color: #ffcaa2;
-  filter: drop-shadow(2px 2px 3px rgb(143, 48, 19));
 }
 
 /* Project Card */
 
 .proCardContainer {
   padding-top: 3vh;
-  width: 45%;
+  width: 65%;
 }
 
 .imgContainer {
@@ -217,8 +204,58 @@ img {
 
 /* @media */
 
-@media only screen and (max-width: 707px) {
-  .dotDotDot {
-    margin-top: 30px;
+/* computer screen */
+
+@media screen and (min-width: 1025px) {
+  .App {
+    grid-template-rows: 20% 1fr 10%;
+  }
+
+  .mainContainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .cardContainer {
+    width: 17vw;
+  }
+
+  .card {
+    width: 17vw;
+    height: 12vw;
+  }
+
+  .card i {
+    font-size: 10vw;
+    transition: 0.6s;
+  }
+
+  .card i:hover {
+    font-size: 11vw;
+    color: #ffcaa2;
+    filter: drop-shadow(2px 2px 3px rgb(143, 48, 19));
+  }
+}
+
+/* tab/phone */
+
+@media screen and (max-width: 1024px) {
+  .card i {
+    font-size: 13vw;
+    transition: 0.6s;
+  }
+
+  .card i:hover {
+    font-size: 14vw;
+    color: #ffcaa2;
+    filter: drop-shadow(2px 2px 3px rgb(143, 48, 19));
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .card i {
+    font-size: 18vw;
+    color: #ffcaa2;
+    filter: drop-shadow(2px 2px 3px rgb(143, 48, 19));
   }
 }
